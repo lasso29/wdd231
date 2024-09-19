@@ -1,0 +1,164 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Old Standard TT', Times, serif;
+}
+a, p {
+    font-family: 'Exo 2',Helvetica, sans-serif;
+}
+
+::backdrop {
+    background-color: rgba(245, 245, 220, 0.281);
+}
+
+
+header {
+   display: flex;
+   justify-content: space-evenly;
+   color: antiquewhite;
+   background-color: #49149c;
+   padding: 20px 3rem 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+header #menuBar::before {
+    content: "≡";
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+header #menuBar.show::before {
+    content: "✖";
+}
+
+#navi {
+    display: none;
+}
+
+#navi.show {
+    display: block;
+    background-color: black;
+    display: grid;
+}
+
+#navi ul li {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+} 
+
+#navi ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 3rem;
+}
+
+main {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/*---------------------- section one ---------------------*/
+
+body h2 {
+    background-color: #49149c;
+    margin: 1rem 0;
+    text-align: center;
+    color: rgb(233, 225, 225);
+    padding: 5px 0;
+}
+
+.section1 ul {
+    padding: 0 4rem;
+    
+}
+
+/*---------------------- section two ---------------------*/
+
+.section2 {
+    text-align: center;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+/*---------------------- section three ---------------------*/
+
+.section3 .sectionNav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.section3 .sectionNav li {
+    color: rgb(233, 225, 225);
+    background-color: black;
+    width: 30%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 8px;
+
+}
+
+.section3 .sectionNav li:hover, .section3 .sectionNav li.active {
+    font-size: 1.3rem;
+    background-color: blue;
+    color: white;
+}
+
+.section3 div p {
+    width: 90%;
+    color: rgb(233, 225, 225);
+    background-color: rgb(102, 19, 19);
+    margin: 2px auto;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+.section3 div p.notCompleted {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.section3 div p.credits {
+    background-color: blue;
+    margin-top: 1rem;
+}
+
+
+/*---------------------- footer ---------------------*/
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #49149c;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1px 0;
+}

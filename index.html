@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayomide Olugbile Home Page</title>
+    <meta name="author" content="Ayomide Olugbile">
+    <meta name="description" content="Course Home Page | WDD 230 | Ayomide Olugbile">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/homepage-large.css">
+    <script src="scripts/homepage.js" defer></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/profile.jpg" alt="author's profile picture"height="75">
+        <h1>Ayomide Olugbile</h1>
+        <p id="menuBar"></p>
+    </header>
+    <nav id="navi">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section1">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="section2">
+            <h2>Lagos Nigeria</h2>
+            <img src="images/nigeria-flag.jpg" alt="the nigerian flag" width="150" height="150">
+            <p class="imageDescription">The nigerian flag</p>
+        </section>
+        <section class="section3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <ul class="sectionNav">
+                <li id="showAll">All</li>
+                <li id="onlyCSE">CSE</li>
+                <li id="onlyWDD">WDD</li>
+            </ul>
+            <dialog id="courseDetails">
+
+            </dialog>
+            <div id="courseList"></div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span></p>
+        <p>⭐ Ayomide Olugbile ⭐</p>
+        <p>Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
