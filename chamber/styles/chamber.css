@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+a,
+p {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*-------------------Directory Page Header--------------------*/
+.header {
+    background-color: #075c64;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+.header #logo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.header #logo img {
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.header #logo p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    max-width: 10rem;
+    color: white;
+}
+
+.header #logo #smallFont {
+    font-size: 1rem;
+}
+
+.header #menuBar::before {
+    content: "≡";
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    color: #FEFBF6;
+}
+
+.header #menuBar.show::before {
+    content: "✖";
+}
+
+/*-------------------Directory Page Navigation--------------------*/
+
+#navi {
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+#navi.show {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+    width: 100%;
+    position: fixed;
+    top: 82px;
+    z-index: 5;
+}
+
+#navi ul {
+    overflow: hidden;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    background-color: #b18d7b;
+}
+
+#navi ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+#navi ul li a {
+    padding: 0.7rem 0;
+    color: #14110c;
+    text-decoration: none;
+}
+
+#navi ul li a:hover {
+    color: gold;
+}
+
+/*-------------------Directory Page Main Section--------------------*/
+
+main section {
+    padding-top: 80px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+main section h1 {
+    text-align: center;
+    color: #351404;
+}
+
+main section p {
+    font-size: 1.2rem;
+    padding: 0 1rem 10px 1rem;
+    text-align: center;
+}
+
+main section #displayButtons {
+    display: flex;
+    justify-content: center;
+}
+
+main section #displayButtons p {
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px solid grey;
+}
+
+main section #displayButtons p:hover {
+    font-weight: 800;
+    color: white;
+    background-color: gold;
+}
+
+
+/*-------------------Directory Page Main Grid Display--------------------*/
+
+main #businessList {
+    padding: 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+main #businessList div {
+    padding: 10px 0;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: 0 0 8px 1px gray;
+}
+
+main #businessList div img {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+main #businessList div p {
+    font-size: 0.8rem;
+    width: 90%;
+    padding: 2px 0;
+    text-align: center;
+}
+
+main #businessList div a {
+    font-size: 0.9rem;
+}
+
+/*-------------------Directory Page Main List Display--------------------*/
+
+main #businessList.list {
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+
+main #businessList div.evenList,
+main #businessList div.oddList {
+    padding: 1rem 2rem;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ecb15971;
+}
+
+main #businessList div.evenList {
+    background-color: #fdf9f3ef;
+}
+
+main #businessList div p {
+    width: 200px;
+    font-size: 1rem;
+    padding: 2px 0;
+    text-align: start;
+    align-self: center;
+}
+
+main #businessList div a {
+    width: 200px;
+    align-self: center;
+}
+
+/*-------------------Directory Page footer--------------------*/
+
+footer {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    background-color: #351404d5;
+}
+
+footer div p,
+footer div h2 {
+    text-align: center;
+    color: white;
+}
+
+#a {
+    color: white;
+}
+
+/*--------------------- Home page styling -------------------*/
+main .hero {
+    position: relative;
+}
+
+.imagecontainer {
+    height: fit-content;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 30rem;
+    margin-top: 60px;
+}
+
+.imagecontainer #action {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+}
+
+.imagecontainer a {
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    background-color: rgba(56, 15, 167, 0.63);
+}
+
+.imagecontainer a:hover {
+    font-size: 1.4rem;
+}
+
+/*--------------------- Home page main section1-------------------*/
+main .infoCardSection {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main .infoCardSection h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+main .infoCardSection .homepageSection1Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 50px;
+    margin-bottom: 2rem;
+}
+
+main .infoCardSection .homepageSection1Grid div {
+    background-color: rgb(235, 221, 205);
+
+}
+
+.infoCardSection div ul {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(22, 22, 126);
+}
+
+/*--------------------- Home page main section1 current weather div -------------------*/
+main .infoCardSection div #current-weather {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.homepageSection1Grid div #current-weather p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.homepageSection1Grid div #current-weather p:first-child {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/*--------------------- Home page main section1 weather forecast div -------------------*/
+.homepageSection1Grid div .infoCard {
+    padding: 20px 0;
+}
+
+.homepageSection1Grid div .infoCard p {
+    text-align: center;
+}
+
+.homepageSection1Grid div #weather-forecast span {
+    font-weight: 700;
+}
+
+/*--------------------- Home page main section1 h3 heading  -------------------*/
+main .infoCardSection .homepageSection1Grid h3 {
+    text-align: center;
+    background-color: rgb(212, 185, 153);
+}
+
+
+.homepageSection2 h2 {
+    text-align: center;
+}
+
+.homepageSection2 #members {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.homepageSection2 #members>div {
+    padding: 5px;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    background-color: rgb(211, 198, 198);
+    border-radius: 10px;
+    box-shadow: 0 0 12px 1px gray;
+}
+
+
+.homepageSection2 #members h3 {
+
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.homepageSection2 #members div p,
+.homepageSection2 #members div a {
+    color: black;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.homepageSection2 #members div div {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.homepageSection2 #members div div div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*------------------------- Join Page Styling  --------------------------*/
+
+.joinsection1 h1 {
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
+}
+
+
+#membershipCards div {
+    border: 2px solid rgba(219, 147, 14, 0.973);
+    background-color: rgba(228, 156, 24, 0.63);
+    ;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 0 12px 0 12px;
+    animation: opacityrise 2s;
+}
+
+
+#membershipCards div button {
+    display: block;
+    margin: 0 auto;
+}
+
+::backdrop {
+    background-color: rgba(134, 130, 125, 0.719);
+}
+
+@keyframes opacityrise {
+    0% {
+        opacity: 0;
+        margin-top: 10rem;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 1rem;
+    }
+}
+
+#dialog {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    padding: 3rem 1rem;
+    color: rgb(235, 234, 223);
+    background-color: rgb(51, 59, 133);
+    border: 2px solid navy;
+    place-self: center;
+}
+
+#dialog button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+#dialog p,
+#dialog h2 {
+    margin-top: 1rem;
+}
+
+#dialog .benefit {
+    margin-top: 0.2rem;
+}
+
+.joinMain {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.joinMain h1,
+.thankyouMain h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    background-color: rgba(145, 137, 199, 0.445);
+    padding: 5% 5% 0 5%;
+    width: 80%;
+    max-width: 300px;
+    margin: 1rem auto 0;
+    border: 1px solid black;
+}
+
+label span {
+    font-size: 0.9rem;
+    color: rgb(29, 17, 63);
+}
+
+.indicator {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(29, 17, 63);
+}
+
+label {
+
+    padding: 10px 10px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+input[type=checkbox] {
+    margin: 10px;
+}
+
+.radio {
+    display: block;
+}
+
+fieldset {
+    margin: 30px 0;
+}
+
+
+main input[type=radio] {
+
+    margin-right: 1rem;
+    text-align: start;
+}
+
+legend {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 5rem;
+    margin-bottom: 30px;
+}
+
+
+input[type=submit] {
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    align-self: center;
+}
+
+/*------------ ThankYou HTML styling -------------*/
+#userInputs {
+    width: 60%;
+    max-width: 30rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: rgb(81, 151, 179);
+    border: 2px solid navy;
+}
+
+#userInputs p {
+    margin: 1rem 0;
+}
+
+#userInputs span {
+    font-weight: 800;
+}
+
+.thankyouMain {
+    margin-top: 10rem;
+}
+
+
+
+main .infoCardSection #info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+main .infoCardSection span {
+    font-weight: 800;
+}
+
+/*----------------- Discover Page Styling ----------------*/
+
+#discoverMain {
+    padding-top: 5rem;
+}
+
+#discoverMain h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+#discoverMain h2 {
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.discoverGrid h2 {
+    margin: 1rem 0;
+    background-color: rgb(20, 28, 51);
+    color: white;
+}
+
+#discoverMain figure {
+    padding: 2rem 0;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#discoverMain figcaption {
+    font-size: 1.3rem;
+}
+
+.discoverGrid #info {
+    padding: 0 0.5rem;
+}
+
+#imagesSection img {
+    width: 95%;
+    max-height: 15rem;
+    margin: 0 0.5rem;
+}
+
+.discoverGrid span {
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,134 @@
+@media screen and (min-width: 48rem) {
+
+    .header #logo {
+        width: 40%;
+        display: flex;
+        justify-content: start;
+        height: 70px;
+    }
+
+    .header #logo p {
+        font-size: 1.9rem;
+        padding-left: 7px;
+        align-self: center;
+    }
+
+    .header #logo #smallFont {
+        font-size: 1.2rem;
+        max-width: 15rem;
+    }
+
+    .header #menuBar::before {
+        display: none;
+    }
+
+    #navi,
+    #navi.show {
+        max-width: 28rem;
+        display: block;
+        position: fixed;
+        top: 0.4rem;
+        right: 1rem;
+        z-index: 6;
+    }
+
+    #navi ul {
+        display: flex;
+        max-width: 28rem;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #075c64;
+    }
+    
+    #navi ul li a {
+        padding: 1rem;
+        color: #FEFBF6;
+    }
+
+    #navi ul li a:hover {
+        font-size: 1.5rem;
+        color: #351404;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .imagecontainer {
+        margin-top: 1.5rem;
+    }
+
+    .imagecontainer #action {
+        font-size: 2rem;
+    }
+
+    .imagecontainer a:hover {
+        font-size: 2.3rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer div {
+        width: 30%;
+    }
+
+
+    main .infoCardSection .homepageSection1Grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    
+    main .infoCardSection #info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    main .infoCardSection #info p {
+       text-align: center;
+    }
+
+
+    .homepageSection1Grid div p {
+        text-align: start;
+    }
+
+    .homepageSection1Grid div p {
+        text-align: start;
+    }
+
+    .homepageSection2 #members {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .joinMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discoverGrid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 0 5rem grey;
+    }
+    
+    .discoverGrid h2 {
+        grid-column: 1 / 3;
+    }
+    
+    .discoverGrid img:hover {
+    opacity: 0.65;
+    }
+
+   
+}
