@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | DogCoPedia</title>
+    <meta name="author" content="Ayomide Oluwatimileyin Olugbile">
+    <meta property="og:title" content="DogCoPedia website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lasso29.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://lasso29.github.io/wdd231/chamber/chamberOfCommercePic.jpg">
+    <meta property="og:description" content="a platform for navigating the business scope of lagos, Nigeria">
+    <meta name="description" content="DogCoPedia | Home Page | Ayomide Olugbile">
+    <link rel="icon" href="images/paww.png">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="logo">
+                <img src="images/paww.png" alt="a symbol of a dog paw" width="50" height="50">
+                <p>DogCoPedia</p>
+            </div>
+            <p id="menuBar"></p>
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>DogCoPedia</h1>
+        <p>We Know how passionate you are about your pets, especially those of you, Dog lovers. So we want to
+            help you know more about this wonderful friend of man. At DogCoPedia, we provide you with a wide range of
+            dog images
+            and information that will help pet owners know more about their dogs and also intending owners find the
+            Dog breed that is right for them.
+        </p>
+        <div class="breedfilter">
+            <h2>Breed Filter</h2>
+            <p>Find your desired Dog breed</p>
+            <form>
+                <label>Breed List *
+                    <select name="breedName" id="breedName" required>
+                        <option value="" disabled selected>Choose a Breed ....</option>
+                    </select>
+                </label>
+                <span>Get Breed</span>
+            </form>
+        </div>
+        <div class="breedfilter" id="doginfo">
+            <h2></h2>
+            <p id="bredfor"></p>
+             <p id="origin"></p>
+             <p id="lifespan"></p>
+             <p id="temperament"></p>
+             <p id="breedgroup"></p>
+        </div>
+        <section class="random">
+            <h2>Random Dogs Display</h2>
+            <div class="randomImages"></div>
+        </section>
+       
+        <dialog id="dialog">
+        </dialog>
+        
+
+    </main>
+    <footer>
+        <div>
+            <h2>Lagos Chamber of Commerce</h2>
+            <p>effectivesolution123@gmail.com</p>
+            <p>+234-90-1234-5679</p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/paw" title="paw icons">Paw icons created by Freepik -
+                    Flaticon</a>
+            </p>
+        </div>
+
+        <div class="socialMediaIcons"></div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Ayomide Oluwatimileyin Olugbile</p>
+            <p>©<span id="currentYear"></span> Lagos Chamber of Commerce</p>
+            <p>Last Modification : <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

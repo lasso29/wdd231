@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | DogCoPedia</title>
+    <meta name="author" content="Ayomide Oluwatimileyin Olugbile">
+    <meta property="og:title" content="DogCoPedia">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lasso29.github.io/wdd231/project/index.html">
+    <meta property="og:description" content="a platform for navigating the business scope of lagos, Nigeria">
+    <meta name="description" content="Chamber of Commerce | DogCoPedia Index Page | Ayomide Olugbile">
+    <link rel="icon" href="images/paww.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/about.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="logo">
+                <img src="images/paww.png" alt="a symbol of a dog paw" width="50" height="50">
+                <p>DogCoPedia</p>
+            </div>
+            <p id="menuBar"></p>
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="joinMain">
+        <h1>Join Our Community Today!</h1>
+        <p> Want to know more about dogs and communicate with other pet owners? . Join Our community today and get 
+            access to these opportunities and alot more features. Plus it's always good to meet and know individuals who are 
+            interested in taking care of dogs. There are alot of tips and ideas you could catch along the way.
+        </p>
+        <div class="aboutImages">
+            <img src="images/join-image1.webp" alt="picture of two individuals smiling with a dog in the middle" loading="lazy">
+            <img src="images/join-image2.webp" alt="picture of a family smiling with numerous dogs with them"
+                loading="lazy">
+        </div>
+        <dialog id="dialog">
+        </dialog>
+        <h2>Please fill the form to join our community today</h2>
+        <form class="joinForm" method="get" action="thankyou.html">
+            <p class="indicator"> * means that the field is required</p>
+            <label>First Name<input type="text" name="firstname" autocomplete="on" required></label>
+            <label>Last Name<input type="text" name="lastname" autocomplete="on" required></label>
+            <label>Email<input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on"
+                    required></label>
+            <label>mobile phone number<input type="tel" name="phonenumber" autocomplete="on" required></label>
+            <input type="submit" id="submit" name="submit" value="Join Today">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <h2>Lagos Chamber of Commerce</h2>
+            <p>finixsolutions02@gmail.com</p>
+            <p>+234-90-1301-1075</p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/paw" title="paw icons">Paw icons created by Freepik -
+                    Flaticon</a>
+            </p>
+        </div>
+
+        <div class="socialMediaIcons"></div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Ayomide Oluwatimileyin Olugbile</p>
+            <p>©<span id="currentYear"></span> Lagos Chamber of Commerce</p>
+            <p>Last Modification : <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
